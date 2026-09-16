@@ -83,5 +83,10 @@ python3 test_netconf_errors.py
   Error Message: inconsistent value: Device refused one or more commands
   [Running Config Check]:
   <rpc-reply ...><data></data></rpc-reply>
-  ```
+  ```  
 * **Summary:** The device accepts the schema but encounters an operational conflict when applying the configuration. With `stop-on-error` configured, processing stops immediately upon encountering the issue and returns an `<rpc-error>`, ensuring no partial or corrupted configuration persists (`<data></data>`).
+
+
+Example output ![Example expected output for two tests](test_netconf_errors.py_example.png)
+
+Happy automating!
